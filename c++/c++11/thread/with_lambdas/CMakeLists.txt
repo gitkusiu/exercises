@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.1)
+project(program CXX)
+find_package (Threads REQUIRED)
+add_compile_options(-std=c++11)
+add_executable(program with_lambdas.cpp)
+target_link_libraries (program ${CMAKE_THREAD_LIBS_INIT})
